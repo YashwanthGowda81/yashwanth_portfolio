@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yashwanth - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <h2>YASHWANTH</h2>
+
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">=</div>
+            <div class="user-option" id="menu" style="display:none">
+                <a href="#">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact Me</a>
+                <a href="#resume">Resume</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slide">
+                <img src="SLIDE1.jpg" alt="decoratoin for the background">
+                <div class="slide-caption">
+                    <img src="yashupic.jpg" alt="profile photo of mine">
+                    <h2>yashwanth</h2>
+                    <p>web developer, data analyst </p>
+                    <div class="submit">
+                        <a href="reume.pdf" download="yashwanth_resume.pdf" class="download_cv">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="about" class="about-box">
+            <h3>About me</h3>
+            <p>Aspiring Software Engineer with a solid foundation in both frontend and backend technologies, seeking to leverage my expertise in Java, Python, and software development to contribute to innovative projects. Passionate about learning and implementing
+                best practices in software development, I aim to enhance user satisfaction and drive product success in a collaborative and dynamic environment.</p>
+        </section>
+        <section id="education" class="about-box">
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor of Computer Science and Engineering, Rajarajeswari College of Engineering</li>
+            </ul>
+            <ul>
+                <li>XII (PUC),Precidency PU College,sira</li>
+            </ul>
+            <ul>
+                <li>X (SSLC),Vedavathi HIGHER PRIMARY SCHOOL PARASHURAMPURA</li>
+            </ul>
+        </section>
+        <section id="skills" class="about-box">
+            <h3>Skills</h3>
+            <ul>
+                <li>
+                    Programming Languages: C, C++, Java, Python
+                </li>
+                <li>
+                    Frontend Technologies: HTML, CSS, JavaScript, React
+                </li>
+                <li>
+                    Databases: MySQL
+                </li>
+                <li>
+                    Version Control: Git, GitHub
+                </li>
+                <li>
+                    Skills: Collaborative, Team Collaboration, Planning, Problem-Solving, Analytical, Adaptability
+                </li>
+                <li>
+                    Operating System: Linux, Windows
+                </li>
+                <li>
+                    Others: Object-Oriented Programming, Data Structures and Algorithms, software design, Software development, Testing
+                </li>
+
+            </ul>
+        </section>
+        <section id="experince" class="about-box">
+            <h3>Experince</h3>
+            <p>Full Stack Web Developer, Varcons Technologies (Aug 2023 – Sep 2023, Bangalore, India)</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nobis! Fugit, ad!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam eaque nisi quae at officia.
+                </li>
+            </ul>
+        </section>
+        <div class="project-container">
+            <h3>Projects</h3>
+            <div class="projects">
+                <div class="project">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Electricity Bill Management System</h2>
+                    <p>Designed and implemented core features including user management, automated billing, and payment processing.
+                    </p>
+                    <p><strong>tech stack used</strong> HTML, CSS, JavaScript, MySQL, PHP for Backend.</p>
+                    <a href="https://GitHub">GitHub - yashwanth</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Electricity Bill Management System</h2>
+                    <p>Designed and implemented core features including user management, automated billing, and payment processing.
+                    </p>
+                    <p><strong>tech stack used</strong> HTML, CSS, JavaScript, MySQL, PHP for Backend.</p>
+                    <a href="https://GitHub">GitHub - yashwanth</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-container" id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i> "yashugowda@gmail.com"
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> " 9972308659"
+                </p>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagam"></i>
+                    </a>
+                </div>
+            </div>
+            <form action="https:api" method="post" class="contct form">
+                <!-- <input type="hidden" name="name" placeholder="your name" required> -->
+                <input type="text" name="name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="message" id="" placeholder="your message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <a href="yashwanth_RESUME.pdf" download="yashwanth_Resume.pdf" class="download-cv">Download CV</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Yashaswini B L. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var hamburgerIcon = document.querySelector('.hamburger-menu');
+
+            // Toggle the visibility of the user options menu
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+                hamburgerIcon.innerHTML = '&#9776;'; // Change back to hamburger icon
+            } else {
+                menu.style.display = 'flex';
+                hamburgerIcon.innerHTML = '&#10005;'; // Change to close icon
+            }
+        }
+    </script>
+</body>
+
+</html>
